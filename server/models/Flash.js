@@ -14,6 +14,12 @@ const FlashSchema = new mongoose.Schema({
     unique: true,
   },
 
+  quizId: {
+    type: mongoose.Schema.ObjectId,
+    required: true,
+    ref: 'Quiz'
+  },
+
   createdDate: {
     type: Date,
     default: Date.now,

@@ -2,7 +2,10 @@ const jishoApi = require('unofficial-jisho-api');
 
 const models = require('../models');
 
+jishoApi.searchForPhrase('日').then((result) => {
+  console.log(result);
+});
 
-jishoApi.searchForPhrase('日').then(result => {
-    console.log(result);
-  });
+const doSearch = (req, res) => {
+  
+}
